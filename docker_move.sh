@@ -1,4 +1,4 @@
 #!/bin/bash
 #centos7コンテナ作る
-docker run -it -d -p 8080:80 --name centos centos:7
-
+$ docker build -t hello-world .
+$ docker run -d -p 4000:80 hello-world
