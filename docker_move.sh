@@ -1,4 +1,5 @@
 #!/bin/bash
 #centos7コンテナ作る
-$ docker build -t hello-world .
-$ docker run -d -p 4000:80 hello-world
+docker build -t nginx:1 .
+#Dockerコンテナを起動
+docker run -it -d -p 8080:80 --name build-nginx nginx:1
