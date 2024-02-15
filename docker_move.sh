@@ -1,2 +1,6 @@
-docker build -t centos .
-docker run -it -d -p 8080:80 --name build-nginx nginx:1
+#dockeのイメージを取得
+docker pull ubuntu:lates
+#imageをサーバ－に落とし込む
+docker push ubuntu:latestt
+#コンテナ起動
+docker start --name ubuntu -it bin/bash
